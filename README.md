@@ -1,4 +1,4 @@
-# 📌 KubeTFX: Scalable ML Pipeline Orchestration with TensorFlow Extended and Kubeflow
+# KubeTFX: Scalable ML Pipeline Orchestration with TensorFlow Extended and Kubeflow
 
 <p align="center">
   <img src="imgs/KubeTFX.png" alt="KTFX" width="300">
@@ -52,7 +52,7 @@ This project demonstrates how Kubernetes-based orchestration improves **scalabil
  ┣ 📜 pipeline_run.py         # Script to compile & submit pipeline to Kubeflow
  ┣ 📜 pv.yaml                 # Persistent Volume definition for Minikube
  ┣ 📜 pvc.yaml                # Persistent Volume Claim for data storage
- ┗ README.md
+ ┗ 📜 README.md
 </pre>
 
 ---
