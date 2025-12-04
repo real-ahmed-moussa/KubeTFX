@@ -6,16 +6,19 @@
 
 > End-to-end machine learning pipeline built with TFX and orchestrated via Kubeflow Pipelines on a local Minikube Kubernetes cluster, demonstrating cloud-native, scalable ML workflows.
 
+---
 
 ## 📖 Overview
 - This project implements a **TFX-based ML pipeline** for **medical insurance cost prediction**, orchestrated with **Kubeflow Pipelines** on **Minikube** to simulate production-ready, cloud-native ML workflows.
 - Adapted from "Building Machine Learning Pipelines" (Hapke & Nelson, 2020), this version features a **custom dataset** and tailored pipeline components, containerized with Docker for reproducibility.
 - Focused on **scalable orchestration, Kubernetes-native execution, and infrastructure-as-code practices** to bridge local development and cloud deployment readiness.
 
+---
 
 ## 🏢 Business Impact
 This project demonstrates how Kubernetes-based orchestration improves **scalability, reproducibility, and deployment readiness** in machine learning pipelines, accelerating the path from development to production while ensuring reliable, auditable workflows.
 
+---
 
 ## 🚀 Features
 ✅ **End-to-End Orchestration:** Automates ingestion, schema validation, data transformation, model training, and evaluation under Kubeflow Pipelines.  
@@ -23,6 +26,7 @@ This project demonstrates how Kubernetes-based orchestration improves **scalabil
 ✅ **Modular and Portable Design:** Dockerized components with YAML-based configuration for seamless reuse and portability.  
 ✅ **TFX Ecosystem Integration:** Leverages TFDV, TFT, and TFMA for data validation, transformation, and model analysis.  
 
+---
 
 ## ⚙️ Tech Stack
 | Technology                  | Purpose                                                            |
@@ -36,6 +40,7 @@ This project demonstrates how Kubernetes-based orchestration improves **scalabil
 | `TF Model Analysis (TFMA)`  | Evaluates model performance using configurable metrics and slicing |
 | `SQLite`                    | Stores pipeline metadata for reproducibility and traceability      |
 
+---
 
 ## 📂 Project Structure
 <pre>
@@ -50,12 +55,13 @@ This project demonstrates how Kubernetes-based orchestration improves **scalabil
  ┗ README.md
 </pre>
 
+---
 
 ## 🛠️ Installation
 1️⃣ **Clone the Repository**
 <pre>
-git clone https://github.com/ahmedmoussa/Projects-Portfolio.git
-cd 'KubeTFX - Scalable ML Pipeline Orchestration with TensorFlow Extended and Kubeflow'
+git clone https://github.com/ahmedmoussa/KubeTFX.git
+cd KubeTFX
 </pre>
 
 2️⃣ **Activate the Kubeflow Environment**
@@ -69,6 +75,7 @@ python pipeline_run.py
 </pre>
 - The compiled YAML will be saved under `pl_yaml_output/` and submitted to the Kubeflow Pipelines UI.
 
+---
 
 ## 🧭 Run Steps (Minikube + Kubeflow Pipelines)
 
@@ -148,6 +155,8 @@ docker cp /home/ahmedmoussa/kf_tfx/pl_comps/. \                     # Location o
   minikube:/home/ahmedmoussa/kf_tfx/pl_comps/                       # Location of pipelines files inside the Minikube container
 ```
 
+---
+
 ## 📷 Pipeline Runs
 
 ### Pipeline Graph (compiled TFX pipeline in KFP UI)
@@ -166,12 +175,17 @@ docker cp /home/ahmedmoussa/kf_tfx/pl_comps/. \                     # Location o
 
   ![Kubeflow Pods](imgs/pods_state.png)
 
+---
 
 ## 📊 Results
 - **Prediction Task:** Regression model for medical insurance cost prediction.
 - **Containerized, Portable Pipeline:** Validated on local Kubernetes cluster.
 - **Cloud-ready Orchestration:** Demonstrated scalable, reproducible ML workflow management for real-world deployment scenarios.
 
+---
 
 ## 📝 License
 This project is shared for portfolio purposes only and may not be used for commercial purposes without permission.
+
+This project is licensed under the **MIT License**.  
+© 2025 **Dr. Ahmed Moussa**
